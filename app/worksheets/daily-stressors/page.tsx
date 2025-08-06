@@ -1,38 +1,35 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useWorksheetContext } from "@/app/context"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface DailyStressorsProps {
-  data: any
-  updateData: (data: any) => void
+const initialFormData = {
+  stressTriggers: "",
+  stressfulPeople: "",
+  currentCopingMethods: "",
+  physicalClues: "",
+  behavioralChanges: "",
+  emotionalResponses: "",
+  firstNoticeableSymptoms: "",
 }
 
-export default function DailyStressors({ data, updateData }: DailyStressorsProps) {
-  const [formData, setFormData] = useState({
-    stressTriggers: "",
-    stressfulPeople: "",
-    currentCopingMethods: "",
-    physicalClues: "",
-    behavioralChanges: "",
-    emotionalResponses: "",
-    firstNoticeableSymptoms: "",
-  })
+export default function DailyStressorsPage() {
+  const { worksheetData, updateWorksheetData } = useWorksheetContext()
+  const [formData, setFormData] = useState(initialFormData)
 
   useEffect(() => {
-    if (Object.keys(data).length > 0) {
-      setFormData(data)
+    const savedData = worksheetData.dailyStressors
+    if (savedData && Object.keys(savedData).length > 0) {
+      setFormData(savedData)
     }
-  }, [data])
+  }, [worksheetData.dailyStressors])
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: keyof typeof initialFormData, value: string) => {
     setFormData((prev) => {
-      const newData = {
-        ...prev,
-        [field]: value,
-      }
-      updateData(newData)
+      const newData = { ...prev, [field]: value }
+      updateWorksheetData("dailyStressors", newData)
       return newData
     })
   }
@@ -45,10 +42,7 @@ export default function DailyStressors({ data, updateData }: DailyStressorsProps
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            1. What are your stress triggers? What situations occur, on a regular basis, which cause you to feel
-            stressed?
-          </CardTitle>
+          <CardTitle>1. What are your stress triggers? What situations occur, on a regular basis, which cause you to feel stressed?</CardTitle>
         </CardHeader>
         <CardContent>
           <Textarea
@@ -104,9 +98,7 @@ export default function DailyStressors({ data, updateData }: DailyStressorsProps
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            5. Do you experience any behavioural changes when you are feeling stressed? If so, identify those here.
-          </CardTitle>
+          <CardTitle>5. Do you experience any behavioural changes when you are feeling stressed? If so, identify those here.</CardTitle>
         </CardHeader>
         <CardContent>
           <Textarea
@@ -134,9 +126,7 @@ export default function DailyStressors({ data, updateData }: DailyStressorsProps
 
       <Card>
         <CardHeader>
-          <CardTitle>
-            7. Complete the Stress Symptom Checklist. Which symptoms of stress are you most likely to notice first?
-          </CardTitle>
+          <CardTitle>7. Complete the Stress Symptom Checklist. Which symptoms of stress are you most likely to notice first?</CardTitle>
         </CardHeader>
         <CardContent>
           <Textarea

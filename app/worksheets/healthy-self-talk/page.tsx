@@ -1,32 +1,29 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useWorksheetContext } from "@/app/context"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface HealthySelfTalkProps {
-  data: any
-  updateData: (data: any) => void
+const initialFormData = {
+  reflections: "",
 }
 
-export default function HealthySelfTalk({ data, updateData }: HealthySelfTalkProps) {
-  const [formData, setFormData] = useState({
-    reflections: "",
-  })
+export default function HealthySelfTalkPage() {
+  const { worksheetData, updateWorksheetData } = useWorksheetContext()
+  const [formData, setFormData] = useState(initialFormData)
 
   useEffect(() => {
-    if (Object.keys(data).length > 0) {
-      setFormData(data)
+    const savedData = worksheetData.healthySelfTalk
+    if (savedData && Object.keys(savedData).length > 0) {
+      setFormData(savedData)
     }
-  }, [data])
+  }, [worksheetData.healthySelfTalk])
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: keyof typeof initialFormData, value: string) => {
     setFormData((prev) => {
-      const newData = {
-        ...prev,
-        [field]: value,
-      }
-      updateData(newData)
+      const newData = { ...prev, [field]: value }
+      updateWorksheetData("healthySelfTalk", newData)
       return newData
     })
   }

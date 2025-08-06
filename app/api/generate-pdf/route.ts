@@ -54,6 +54,17 @@ function formatComplexAnswer(answer: any): string {
   return String(answer)
 }
 
+// Function to get the score category for the Stressful Life Events worksheet
+function getScoreCategory(score: number): string {
+  if (score <= 150) {
+    return "Below 150 - 30% chance of illness or accident in 2 years"
+  } else if (score <= 300) {
+    return "Between 150 - 300 - 51% chance of illness or accident"
+  } else {
+    return "Over 300 - 80% chance of illness or accident"
+  }
+}
+
 export async function POST(request: Request): Promise<NextResponse> {
   try {
     const data: WorksheetData = await request.json()
@@ -116,37 +127,65 @@ export async function POST(request: Request): Promise<NextResponse> {
       })
       y -= 25
 
-      // Section Content
-      for (const [questionKey, answerValue] of Object.entries(sectionValue)) {
-        if (!answerValue || (typeof answerValue === "string" && !answerValue.trim()))
-          continue
+      // --- Special handling for Stressful Life Events ---
+      if (sectionKey === 'stressfulLifeEvents' && sectionValue.totalScore) {
+        const totalScore = sectionValue.totalScore;
+        const scoreCategory = getScoreCategory(totalScore);
 
-        const questionText =
-          questionKey
-            .replace(/([A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUpperCase()) + ":"
+        ensurePageSpace(50); // Ensure space for the summary
 
-        const answerText = formatComplexAnswer(answerValue)
+        // Draw Total Score
+        page.drawText(`Total Score: ${totalScore}`, {
+            x: margin,
+            y,
+            font: boldFont,
+            size: 12,
+        });
+        y -= 20;
 
-        const questionLines = wrapText(questionText, boldFont, 11, contentWidth)
-        const answerLines = wrapText(answerText, font, 11, contentWidth - 15) // Indent answers
+        // Draw Score Category
+        page.drawText(scoreCategory, {
+            x: margin,
+            y,
+            font: font,
+            size: 11,
+            color: rgb(0.1, 0.1, 0.1),
+        });
+        y -= 15;
 
-        const requiredSpace = (questionLines.length + answerLines.length) * 15 + 10
-        ensurePageSpace(requiredSpace)
+      } else {
+        // --- Default Section Content --- 
+        for (const [questionKey, answerValue] of Object.entries(sectionValue)) {
+          if (!answerValue || (typeof answerValue === "string" && !answerValue.trim()))
+            continue
 
-        // Draw Question
-        for (const line of questionLines) {
-          page.drawText(line, { x: margin, y, font: boldFont, size: 11 })
-          y -= 15
+          const questionText =
+            questionKey
+              .replace(/([A-Z])/g, " $1")
+              .replace(/^./, (str) => str.toUpperCase()) + ":"
+
+          const answerText = formatComplexAnswer(answerValue)
+
+          const questionLines = wrapText(questionText, boldFont, 11, contentWidth)
+          const answerLines = wrapText(answerText, font, 11, contentWidth - 15) // Indent answers
+
+          const requiredSpace = (questionLines.length + answerLines.length) * 15 + 10
+          ensurePageSpace(requiredSpace)
+
+          // Draw Question
+          for (const line of questionLines) {
+            page.drawText(line, { x: margin, y, font: boldFont, size: 11 })
+            y -= 15
+          }
+
+          // Draw Answer
+          for (const line of answerLines) {
+            page.drawText(line, { x: margin + 15, y, font, size: 11 })
+            y -= 15
+          }
+
+          y -= 10 // Extra space between Q&A pairs
         }
-
-        // Draw Answer
-        for (const line of answerLines) {
-          page.drawText(line, { x: margin + 15, y, font, size: 11 })
-          y -= 15
-        }
-
-        y -= 10 // Extra space between Q&A pairs
       }
       y -= 15 // Add extra space between sections
     }

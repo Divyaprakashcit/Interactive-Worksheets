@@ -1,38 +1,35 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useWorksheetContext } from "@/app/context"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface PerspectiveToolProps {
-  data: any
-  updateData: (data: any) => void
+const initialFormData = {
+  worstCase: "",
+  worstCaseProbability: "",
+  preventWorstCase: "",
+  bestCase: "",
+  makeBestCaseHappen: "",
+  mostLikelyCase: "",
+  handleMostLikelyCase: "",
 }
 
-export default function PerspectiveTool({ data, updateData }: PerspectiveToolProps) {
-  const [formData, setFormData] = useState({
-    worstCase: "",
-    worstCaseProbability: "",
-    preventWorstCase: "",
-    bestCase: "",
-    makeBestCaseHappen: "",
-    mostLikelyCase: "",
-    handleMostLikelyCase: "",
-  })
+export default function PerspectiveToolPage() {
+  const { worksheetData, updateWorksheetData } = useWorksheetContext()
+  const [formData, setFormData] = useState(initialFormData)
 
   useEffect(() => {
-    if (Object.keys(data).length > 0) {
-      setFormData(data)
+    const savedData = worksheetData.perspectiveTool
+    if (savedData && Object.keys(savedData).length > 0) {
+      setFormData(savedData)
     }
-  }, [data])
+  }, [worksheetData.perspectiveTool])
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field: keyof typeof initialFormData, value: string) => {
     setFormData((prev) => {
-      const newData = {
-        ...prev,
-        [field]: value,
-      }
-      updateData(newData)
+      const newData = { ...prev, [field]: value }
+      updateWorksheetData("perspectiveTool", newData)
       return newData
     })
   }
