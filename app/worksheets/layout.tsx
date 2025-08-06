@@ -1,5 +1,6 @@
 import { WorksheetProvider } from "../context"
 import { SidebarNav } from "@/components/sidebar-nav"
+import WorksheetTemplate from "./template"
 
 export default function WorksheetLayout({ children }: { children: React.ReactNode }) {
   const sidebarNavItems = [
@@ -23,7 +24,7 @@ export default function WorksheetLayout({ children }: { children: React.ReactNod
           <aside className="-mx-4 lg:w-1/5">
             <SidebarNav items={sidebarNavItems} />
           </aside>
-          <div className="flex-1 lg:max-w-4xl">{children}</div>
+          <div className="flex-1 lg:max-w-4xl"><WorksheetTemplate>{children}</WorksheetTemplate></div>
         </div>
       </div>
     </WorksheetProvider>

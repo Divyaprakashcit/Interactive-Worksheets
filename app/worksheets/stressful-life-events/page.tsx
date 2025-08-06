@@ -192,18 +192,8 @@ export default function StressfulLifeEventsPage() {
   }
 
   return (
-    <div className="space-y-8">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold">ASSESSMENT OF STRESSFUL LIFE EVENTS</h2>
-        <p className="mt-2 text-gray-600">
-          Below is an assessment of stressful life events based on the research done by Drs. Holmes and Rahe. It is designed to assess possible health risks, based on the things that have happened in your life in the last year.
-        </p>
-        <p className="mt-2 text-gray-600">
-          Below are a variety of possible normal yet stressful events. Add up the numbers on the right of each event that has occurred in your life in the last 12 months.
-        </p>
-      </div>
-
-      <Card>
+    
+      <Card className="w-full max-w-4xl mx-auto">
         <CardHeader>
           <CardTitle>Stressful Life Events Checklist</CardTitle>
           <CardDescription>Check all events that have occurred in your life in the past 12 months</CardDescription>
@@ -242,6 +232,6 @@ export default function StressfulLifeEventsPage() {
           </div>
         </CardContent>
       </Card>
-    </div>
+    
   )
 }
