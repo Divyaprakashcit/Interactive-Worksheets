@@ -1,0 +1,90 @@
+{
+  "stressSymptomChecklist": {
+    "physicalSymptoms": {
+      "headaches": "3",
+      "backPain": "22",
+      "indigestion": "",
+      "tightNeckShoulders": "",
+      "stomachaches": "34",
+      "racingHeart": "",
+      "sweatyPalms": "",
+      "shallowBreathing": "3",
+      "dizziness": "",
+      "restlessness": "",
+      "easilyFatigued": "",
+      "ringingInEars": "3",
+      "muscleTension": "",
+      "constipation": "",
+      "diarrhea": ""
+    },
+    "physicalTop3": [
+      "Divya",
+      "Divya",
+      ""
+    ],
+    "behavioralSymptoms": {
+      "excessiveSmoking": "",
+      "drivingTooFast": "5",
+      "bossiness": "3",
+      "grindingTeeth": "",
+      "eatingTooLittleOrMuch": "5",
+      "overuseAlcohol": "3",
+      "criticalAttitude": "",
+      "inabilityFinishTasks": "",
+      "shortTemper": "5",
+      "nailBiting": "",
+      "procrastinating": "",
+      "fidgeting": "2",
+      "sleepingTooMuchOrLittle": "3"
+    },
+    "behavioralTop3": [
+      "Divya",
+      "Divya",
+      "Divya"
+    ],
+    "emotionalSymptoms": {
+      "botheredByUnimportant": "1",
+      "criesEasily": "5",
+      "nervousnessAnxiety": "4",
+      "overwhelmingPressure": "",
+      "boredom": "",
+      "anger": "",
+      "edginess": "",
+      "loneliness": "",
+      "irritable": "5",
+      "unhappinessDepression": "",
+      "feelingBurnedOut": "",
+      "moodiness": "",
+      "feelingPowerless": "",
+      "feelingHelpless": "5"
+    },
+    "emotionalTop3": [
+      "Divya",
+      "Divya",
+      "Divya"
+    ],
+    "cognitiveSymptoms": {
+      "troubleThinkingClearly": "5",
+      "inabilityMakeDecisions": "",
+      "difficultyConcentration": "",
+      "constantWorry": "",
+      "forgetfulness": "4",
+      "lossOfHumor": "3",
+      "lackOfCreativity": "",
+      "beingSelfCritical": "2",
+      "expectingTooMuch": "",
+      "beingPessimistic": ""
+    },
+    "cognitiveTop3": [
+      "Divya",
+      "",
+      "Divya"
+    ]
+  },
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {},
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}

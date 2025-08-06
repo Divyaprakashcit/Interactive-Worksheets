@@ -1,0 +1,90 @@
+{
+  "stressSymptomChecklist": {
+    "physicalSymptoms": {
+      "headaches": "",
+      "backPain": "2",
+      "indigestion": "",
+      "tightNeckShoulders": "",
+      "stomachaches": "",
+      "racingHeart": "",
+      "sweatyPalms": "",
+      "shallowBreathing": "",
+      "dizziness": "",
+      "restlessness": "",
+      "easilyFatigued": "",
+      "ringingInEars": "",
+      "muscleTension": "",
+      "constipation": "",
+      "diarrhea": ""
+    },
+    "physicalTop3": [
+      "",
+      "",
+      ""
+    ],
+    "behavioralSymptoms": {
+      "excessiveSmoking": "",
+      "drivingTooFast": "",
+      "bossiness": "",
+      "grindingTeeth": "",
+      "eatingTooLittleOrMuch": "",
+      "overuseAlcohol": "",
+      "criticalAttitude": "",
+      "inabilityFinishTasks": "",
+      "shortTemper": "",
+      "nailBiting": "",
+      "procrastinating": "",
+      "fidgeting": "",
+      "sleepingTooMuchOrLittle": ""
+    },
+    "behavioralTop3": [
+      "",
+      "",
+      ""
+    ],
+    "emotionalSymptoms": {
+      "botheredByUnimportant": "",
+      "criesEasily": "",
+      "nervousnessAnxiety": "",
+      "overwhelmingPressure": "",
+      "boredom": "",
+      "anger": "",
+      "edginess": "",
+      "loneliness": "",
+      "irritable": "",
+      "unhappinessDepression": "",
+      "feelingBurnedOut": "",
+      "moodiness": "",
+      "feelingPowerless": "",
+      "feelingHelpless": ""
+    },
+    "emotionalTop3": [
+      "",
+      "",
+      ""
+    ],
+    "cognitiveSymptoms": {
+      "troubleThinkingClearly": "",
+      "inabilityMakeDecisions": "",
+      "difficultyConcentration": "",
+      "constantWorry": "",
+      "forgetfulness": "",
+      "lossOfHumor": "",
+      "lackOfCreativity": "",
+      "beingSelfCritical": "",
+      "expectingTooMuch": "",
+      "beingPessimistic": ""
+    },
+    "cognitiveTop3": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {},
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}

@@ -1,0 +1,90 @@
+{
+  "stressSymptomChecklist": {
+    "physicalSymptoms": {
+      "headaches": "1",
+      "backPain": "",
+      "indigestion": "",
+      "tightNeckShoulders": "",
+      "stomachaches": "",
+      "racingHeart": "",
+      "sweatyPalms": "",
+      "shallowBreathing": "",
+      "dizziness": "",
+      "restlessness": "",
+      "easilyFatigued": "",
+      "ringingInEars": "",
+      "muscleTension": "",
+      "constipation": "",
+      "diarrhea": ""
+    },
+    "physicalTop3": [
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf",
+      "",
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf"
+    ],
+    "behavioralSymptoms": {
+      "excessiveSmoking": "",
+      "drivingTooFast": "",
+      "bossiness": "",
+      "grindingTeeth": "",
+      "eatingTooLittleOrMuch": "",
+      "overuseAlcohol": "",
+      "criticalAttitude": "",
+      "inabilityFinishTasks": "",
+      "shortTemper": "",
+      "nailBiting": "",
+      "procrastinating": "",
+      "fidgeting": "",
+      "sleepingTooMuchOrLittle": ""
+    },
+    "behavioralTop3": [
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf",
+      "",
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf"
+    ],
+    "emotionalSymptoms": {
+      "botheredByUnimportant": "",
+      "criesEasily": "",
+      "nervousnessAnxiety": "",
+      "overwhelmingPressure": "",
+      "boredom": "",
+      "anger": "",
+      "edginess": "",
+      "loneliness": "",
+      "irritable": "",
+      "unhappinessDepression": "",
+      "feelingBurnedOut": "",
+      "moodiness": "",
+      "feelingPowerless": "",
+      "feelingHelpless": ""
+    },
+    "emotionalTop3": [
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf",
+      "",
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf"
+    ],
+    "cognitiveSymptoms": {
+      "troubleThinkingClearly": "",
+      "inabilityMakeDecisions": "",
+      "difficultyConcentration": "",
+      "constantWorry": "",
+      "forgetfulness": "",
+      "lossOfHumor": "",
+      "lackOfCreativity": "",
+      "beingSelfCritical": "",
+      "expectingTooMuch": "",
+      "beingPessimistic": ""
+    },
+    "cognitiveTop3": [
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf",
+      "",
+      "E:\\Interactive Worksheets\\WorkplaceEQ_Report.pdf"
+    ]
+  },
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {},
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}

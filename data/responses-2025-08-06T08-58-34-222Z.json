@@ -1,0 +1,29 @@
+{
+  "stressSymptomChecklist": {},
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {
+    "hinderingThinking": {
+      "filtering": false,
+      "polarisedThinking": false,
+      "overgeneralisation": false,
+      "mindReading": false,
+      "catastrophising": false,
+      "personalisation": false,
+      "controlFallacies": false,
+      "fallacyOfFairness": true,
+      "blaming": true,
+      "shoulds": false,
+      "fallacyOfChange": false,
+      "beingRight": false,
+      "heavensRewardFallacy": false
+    }
+  },
+  "perspectiveTool": {},
+  "healthySelfTalk": {},
+  "stressManagementTechniques": {},
+  "howMuchStressWeighs": {},
+  "howMuchStressWeighsFunny": {},
+  "changingYourMindset": {}
+}

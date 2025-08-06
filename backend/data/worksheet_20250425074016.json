@@ -1,0 +1,98 @@
+{
+  "stressSymptomChecklist": {
+    "physicalSymptoms": {
+      "headaches": "",
+      "backPain": "5",
+      "indigestion": "",
+      "tightNeckShoulders": "",
+      "stomachaches": "5",
+      "racingHeart": "",
+      "sweatyPalms": "",
+      "shallowBreathing": "",
+      "dizziness": "",
+      "restlessness": "",
+      "easilyFatigued": "",
+      "ringingInEars": "",
+      "muscleTension": "",
+      "constipation": "",
+      "diarrhea": ""
+    },
+    "physicalTop3": [
+      "report",
+      "report",
+      "report"
+    ],
+    "behavioralSymptoms": {
+      "excessiveSmoking": "3",
+      "drivingTooFast": "",
+      "bossiness": "",
+      "grindingTeeth": "3",
+      "eatingTooLittleOrMuch": "2",
+      "overuseAlcohol": "",
+      "criticalAttitude": "",
+      "inabilityFinishTasks": "2",
+      "shortTemper": "1",
+      "nailBiting": "",
+      "procrastinating": "",
+      "fidgeting": "",
+      "sleepingTooMuchOrLittle": ""
+    },
+    "behavioralTop3": [
+      "report",
+      "report",
+      "report"
+    ],
+    "emotionalSymptoms": {
+      "botheredByUnimportant": "3",
+      "criesEasily": "4",
+      "nervousnessAnxiety": "",
+      "overwhelmingPressure": "",
+      "boredom": "",
+      "anger": "2",
+      "edginess": "",
+      "loneliness": "",
+      "irritable": "",
+      "unhappinessDepression": "",
+      "feelingBurnedOut": "",
+      "moodiness": "",
+      "feelingPowerless": "",
+      "feelingHelpless": ""
+    },
+    "emotionalTop3": [
+      "report",
+      "report",
+      "report"
+    ],
+    "cognitiveSymptoms": {
+      "troubleThinkingClearly": "4",
+      "inabilityMakeDecisions": "",
+      "difficultyConcentration": "",
+      "constantWorry": "",
+      "forgetfulness": "",
+      "lossOfHumor": "",
+      "lackOfCreativity": "",
+      "beingSelfCritical": "",
+      "expectingTooMuch": "",
+      "beingPessimistic": ""
+    },
+    "cognitiveTop3": [
+      "report",
+      "report",
+      "report"
+    ]
+  },
+  "dailyStressors": {
+    "stressTriggers": "report",
+    "stressfulPeople": "report",
+    "currentCopingMethods": "report",
+    "physicalClues": "report",
+    "behavioralChanges": "report",
+    "emotionalResponses": "report",
+    "firstNoticeableSymptoms": "report"
+  },
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {},
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}

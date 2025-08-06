@@ -1,0 +1,38 @@
+{
+  "stressSymptomChecklist": {},
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {
+    "hinderingThinking": {
+      "filtering": false,
+      "polarisedThinking": false,
+      "overgeneralisation": false,
+      "mindReading": false,
+      "catastrophising": false,
+      "personalisation": false,
+      "controlFallacies": true,
+      "fallacyOfFairness": true,
+      "blaming": true,
+      "shoulds": false,
+      "fallacyOfChange": false,
+      "beingRight": false,
+      "heavensRewardFallacy": false
+    },
+    "changingMindset": {
+      "worryingAboutUncontrollable": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n",
+      "failingToSeeChoices": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n",
+      "procrastination": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n",
+      "expectingPerfection": "",
+      "resistingChange": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n",
+      "competitiveThinking": "",
+      "focusingOnFaults": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n",
+      "failingToSetLimits": "",
+      "poorSelfCare": "",
+      "expectingResolution": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n"
+    },
+    "immediateChange": "E:\\Interactive Worksheets\\WorkplaceEQ_Report (3).pdf\n"
+  },
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}

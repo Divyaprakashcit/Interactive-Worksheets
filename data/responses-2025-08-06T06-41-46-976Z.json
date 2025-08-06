@@ -1,0 +1,90 @@
+{
+  "stressSymptomChecklist": {
+    "physicalSymptoms": {
+      "headaches": "1",
+      "backPain": "",
+      "indigestion": "",
+      "tightNeckShoulders": "",
+      "stomachaches": "",
+      "racingHeart": "",
+      "sweatyPalms": "",
+      "shallowBreathing": "12",
+      "dizziness": "2",
+      "restlessness": "",
+      "easilyFatigued": "",
+      "ringingInEars": "",
+      "muscleTension": "",
+      "constipation": "",
+      "diarrhea": "1"
+    },
+    "physicalTop3": [
+      "Progress",
+      "Progress",
+      "Progress"
+    ],
+    "behavioralSymptoms": {
+      "excessiveSmoking": "2",
+      "drivingTooFast": "",
+      "bossiness": "",
+      "grindingTeeth": "2",
+      "eatingTooLittleOrMuch": "",
+      "overuseAlcohol": "",
+      "criticalAttitude": "",
+      "inabilityFinishTasks": "2",
+      "shortTemper": "2",
+      "nailBiting": "",
+      "procrastinating": "",
+      "fidgeting": "",
+      "sleepingTooMuchOrLittle": ""
+    },
+    "behavioralTop3": [
+      "Progress",
+      "",
+      "Progress"
+    ],
+    "emotionalSymptoms": {
+      "botheredByUnimportant": "3",
+      "criesEasily": "",
+      "nervousnessAnxiety": "",
+      "overwhelmingPressure": "",
+      "boredom": "1",
+      "anger": "",
+      "edginess": "",
+      "loneliness": "",
+      "irritable": "1",
+      "unhappinessDepression": "",
+      "feelingBurnedOut": "",
+      "moodiness": "",
+      "feelingPowerless": "",
+      "feelingHelpless": "1"
+    },
+    "emotionalTop3": [
+      "Progress",
+      "",
+      "Progress"
+    ],
+    "cognitiveSymptoms": {
+      "troubleThinkingClearly": "",
+      "inabilityMakeDecisions": "",
+      "difficultyConcentration": "",
+      "constantWorry": "",
+      "forgetfulness": "",
+      "lossOfHumor": "",
+      "lackOfCreativity": "",
+      "beingSelfCritical": "",
+      "expectingTooMuch": "",
+      "beingPessimistic": ""
+    },
+    "cognitiveTop3": [
+      "Progress",
+      "",
+      "Progress"
+    ]
+  },
+  "dailyStressors": {},
+  "stressManagementPlan": {},
+  "stressfulLifeEvents": {},
+  "resilientMindset": {},
+  "perspectiveTool": {},
+  "healthySelfTalk": {}
+}
